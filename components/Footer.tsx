@@ -31,12 +31,6 @@ export default function Footer() {
             LinkedIn
           </Link>
           <Link
-            href="https://x.com/vic_szn"
-            className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-1 sm:p-2 m-1"
-          >
-            Twitter
-          </Link>
-          <Link
             href="https://wa.me/2349110591628"
             className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-1 sm:p-2 m-1"
           >

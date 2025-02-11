@@ -15,7 +15,7 @@ export default function Contact() {
       </div>
 
       <div className="relative z-10 mb-10 md:mb-0 md:mr-10">
-        <Image src="/porsche.jpg" alt="my image" width={400} height={200} />
+        <Image src="/vic.jpg" alt="my image" width={400} height={200} />
       </div>
       <div className="relative z-10 w-full max-w-md">
         <form className="space-y-4 bg-white p-10 w-full">
