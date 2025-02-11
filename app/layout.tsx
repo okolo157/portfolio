@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export const metadata: Metadata = {
   title: "Victor Okolo",
   description: "MERN Stack Developer",
@@ -18,6 +20,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>

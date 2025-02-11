@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className="relative flex flex-col md:flex-row justify-evenly items-center min-h-screen p-10 overflow-hidden bg-gray-100">
       {/* Animated Scrolling Text */}
-      <div className="absolute top-1/2 left-0 w-full overflow-hidden">
+      <div className="absolute top-1/3 left-0 w-full overflow-hidden">
         <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 animate-marquee">
           HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU
           &nbsp;
@@ -15,7 +15,7 @@ export default function Contact() {
       </div>
 
       <div className="relative z-10 mb-10 md:mb-0 md:mr-10">
-        <Image src="/vic.jpg" alt="my image" width={400} height={200} />
+        <Image src="/porsche.jpg" alt="my image" width={400} height={200} />
       </div>
       <div className="relative z-10 w-full max-w-md">
         <form className="space-y-4 bg-white p-10 w-full">
