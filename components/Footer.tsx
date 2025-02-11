@@ -42,6 +42,12 @@ export default function Footer() {
           >
             Whatsapp
           </Link>
+          <Link
+            href="https://flowcv.com/resume/ilbnbmi60q"
+            className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-1 sm:p-2 m-1"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </div>

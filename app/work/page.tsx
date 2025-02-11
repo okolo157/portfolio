@@ -12,35 +12,68 @@ const robotoMono = Roboto_Mono({
 export default function Page() {
   const projects = [
     {
-      title: "[WIP] RECREATE AI WEB APP",
+      title: "[🚧WIP] RECREATE AI",
       image: "/screenshot1.jpg",
       technologies:
-        "MongoDB, Express, React, NodeJS, GeminiAPI, StyledComponents",
+        "MongoDB, Express, React, NodeJS, Mongoose, Gemini, StyledComponents, Render",
       link: "https://recreate-ai/onrender.com",
+      description:
+        "An AI web app that can be used to convert UI into code from just a screenshot/mockup.",
     },
     {
-      title: "[WIP] SECOND PROJECT",
-      image: "/screenshot1.jpg",
-      technologies: "Next.js, TypeScript, Tailwind, Firebase, OpenAI API",
-      link: "http://github.com",
+      title: "TOBAMS BLOG",
+      image: "/tobams.png",
+      technologies: "Next.js, TypeScript, Tailwind, Cypress, Vercel",
+      link: "https://blogging-app-virid.vercel.app",
+      description:
+        "Frontend for a website that fetches blog articles using JS fetch from a publicly avalable endpoint. Includes filtering and pagination techniques.",
     },
     {
-      title: "[WIP] SECOND PROJECT",
+      title: "METRICS VISUALIZER",
       image: "/screenshot1.jpg",
-      technologies: "Next.js, TypeScript, Tailwind, Firebase, OpenAI API",
-      link: "http://github.com",
+      technologies:
+        "Next.js, TypeScript, Tailwind, Nextauth, Prisma, MySQL, Recharts, Vercel",
+      link: "agusto-finance-three.vercel.app",
+      description:
+        "A fully auth enabled website with the ability transform smaller CSV dasets into a comprehensive graph.",
     },
     {
-      title: "[WIP] SECOND PROJECT",
+      title: "SCISSOR",
       image: "/screenshot1.jpg",
-      technologies: "Next.js, TypeScript, Tailwind, Firebase, OpenAI API",
-      link: "http://github.com",
+      technologies: "React, Typescript, Tailwind, NodeJS, Redis, Render",
+      link: "https://scissor-app-03ep.onrender.com/",
+      description: "A url shortner with included caching using Redis",
     },
     {
-      title: "[WIP] SECOND PROJECT",
+      title: "SICKLE AID API  ",
       image: "/screenshot1.jpg",
-      technologies: "Next.js, TypeScript, Tailwind, Firebase, OpenAI API",
-      link: "http://github.com",
+      technologies:
+        "NodeJS, Express, JWT, MongoDB, Mongoose, NodeMailer, Render",
+      link: "https://scissor-app-03ep.onrender.com/",
+      description: "An API for a react native application called 'sickle-aid'",
+    },
+    {
+      title: "GAWC",
+      image: "/screenshot1.jpg",
+      technologies: "Wordpress, Elementor, Hostinger",
+      link: "https://goldenacewelfareclub.com/",
+      description: "A landing page for a social welfare club.",
+    },
+    {
+      title: "NZIMI CLEAN",
+      image: "/screenshot1.jpg",
+      technologies: "Html, CSS, JS, Tidio, Jotform, Hostinger",
+      link: "https://nzimiclean.de",
+      description: "A website for a cleaning company",
+    },
+
+    {
+      title: "PORTFOLIO",
+      image: "/screenshot1.jpg",
+      technologies: "React, SCSS, StyledComponents, gsap, Netlify",
+      link: "https://tinyurl.com/victor-okolo",
+      description:
+        "My previous portfolio website, makes use of css preprocessing tools and techniques.",
     },
   ];
 
@@ -49,8 +82,8 @@ export default function Page() {
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center ${
-            index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+          className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center  ${
+            index % 2 === 0 ? "bg-white text-black" : "bg-black text-white"
           }`}
         >
           <Image
@@ -68,6 +101,7 @@ export default function Page() {
                 {project.title}
               </Link>
             )}
+            <p className="w-2/3">{project.description}</p>
             <p className={robotoMono.className}>{project.technologies}</p>
           </div>
         </div>
