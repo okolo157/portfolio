@@ -126,7 +126,7 @@ const About: React.FC = () => {
         </div>
         <button
           onClick={() => router.push("/work")}
-          className="border border-black p-3 hover:bg-white text-sm mt-2 hover:text-black transition-colors ease-in-out w-1/2 lg:w-1/4 self-center"
+          className="border border-black p-3 hover:bg-white text-sm mt-2 hover:text-black transition-colors ease-in-out w-1/3 lg:w-1/4 self-center"
         >
           CHECK OUT MORE STUFF
         </button>
