@@ -12,7 +12,7 @@ const robotoMono = Roboto_Mono({
 export default function Intro() {
   return (
     <div
-      className="min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
+      className="min-h-[50vh] flex items-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/ikoyi-bridge.jpg')",
       }}
