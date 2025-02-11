@@ -14,7 +14,7 @@ export default function Stack() {
         <p className="text-black pl-2 bg-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold sm:mr-6 md:mr-8 lg:mr-10">
           `CREATIVE` DEVELOPER...
         </p>
-        <p className="text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold pr-4 sm:pr-6 md:pr-8 lg:pr-10">
+        <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold pr-4 sm:pr-6 md:pr-8 lg:pr-10">
           I EXPRESS THROUGH {"<CODE />"}
         </p>
         <button

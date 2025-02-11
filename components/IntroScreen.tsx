@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import { Roboto_Mono } from "next/font/google";
 
 const robotoMono = Roboto_Mono({
@@ -8,11 +10,40 @@ const robotoMono = Roboto_Mono({
 });
 
 export default function Intro() {
+  const [bgImage, setBgImage] = useState("");
+  const introRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setBgImage("url('/ikoyi-bridge.jpg')");
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const currentRef = introRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
     <div
+      ref={introRef}
       className="min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/ikoyi-bridge.jpg')",
+        backgroundImage: bgImage,
         backgroundAttachment: "fixed",
       }}
     >

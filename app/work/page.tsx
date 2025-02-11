@@ -12,7 +12,7 @@ const robotoMono = Roboto_Mono({
 export default function Page() {
   const projects = [
     {
-      title: "[🚧WIP] RECREATE AI",
+      title: "RECREATE AI [🚧WIP] ",
       image: "/screenshot1.jpg",
       technologies:
         "MongoDB, Express, React, NodeJS, Mongoose, Gemini, StyledComponents, Render",
@@ -83,7 +83,7 @@ export default function Page() {
         <div
           key={index}
           className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center  ${
-            index % 2 === 0 ? "bg-white text-black" : "bg-black text-white"
+            index % 2 === 1 ? "bg-white text-black" : "bg-black text-white"
           }`}
         >
           <Image
@@ -92,18 +92,18 @@ export default function Page() {
             height={300}
             alt={project.title}
           />
-          <div className="text-center md:text-left flex flex-col gap-4">
+            <div className="text-center md:text-left flex flex-col gap-4 w-full md:w-1/2 p-4">
             {project.link && (
               <Link
-                href={project.link}
-                className="font-bold text-3xl hover:text-blue-300 transition-colors ease-in-out"
+              href={project.link}
+              className="font-bold text-3xl hover:text-blue-300 transition-colors ease-in-out"
               >
-                {project.title}
+              {project.title}
               </Link>
             )}
-            <p className="w-2/3">{project.description}</p>
+            <p className="w-full md:w-2/3">{project.description}</p>
             <p className={robotoMono.className}>{project.technologies}</p>
-          </div>
+            </div>
         </div>
       ))}
     </div>

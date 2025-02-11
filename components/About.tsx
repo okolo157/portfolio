@@ -40,14 +40,14 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="relative flex flex-col items-center min-h-screen p-2 mt-10">
+      <div className="relative flex flex-col items-center min-h-screen p-2 mt-10 ">
         <Image src="/bg-dark.jpg" width={300} height={100} alt="background" />
 
         <h1 className="font-bold lg:text-[100px] text-4xl mt-10 text-center">
           BORN A CREATIVE
         </h1>
 
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 my-[100px]">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 my-[100px] ">
           {firstImageSet.map((src: string, index: number) => (
             <div
               key={index}
@@ -69,21 +69,18 @@ const About: React.FC = () => {
 
       <div className={robotoMono.className}>
         <div className="relative py-10 flex justify-center items-center  text-center text-white text-lg">
-          {/* Left Fixed Text (Hidden on Small Screens) */}
           <p className="hidden lg:block absolute left-10 m-10 text-gray-400 font-bold text-4xl">
             *
           </p>
 
-          {/* Main Content */}
           <p className="w-2/3">
             My journey involves a blend of creativity with technology. I started
             out in filmmaking, where I quickly realized that my true passion lay
             in video editing. There’s something magical about piecing together a
-            story through careful cuts and transitions—it felt like crafting a
+            story through careful cuts and transitions. It felt like crafting a
             masterpiece, and I loved every moment of it.
           </p>
 
-          {/* Right Fixed Text (Hidden on Small Screens) */}
           <p className="hidden lg:block absolute right-10 m-10 font-bold text-gray-400 text-4xl">
             *
           </p>
@@ -129,7 +126,7 @@ const About: React.FC = () => {
         </div>
         <button
           onClick={() => router.push("/work")}
-          className="border border-black p-3 hover:bg-white text-sm mt-2 hover:text-black transition-colors ease-in-out w-1/4 self-center"
+          className="border border-black p-3 hover:bg-white text-sm mt-2 hover:text-black transition-colors ease-in-out w-full lg:w-1/4 self-center"
         >
           CHECK OUT MORE STUFF
         </button>
