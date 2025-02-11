@@ -30,7 +30,7 @@ export default function Page() {
     },
     {
       title: "METRICS VISUALIZER",
-      image: "/screenshot1.jpg",
+      image: "/metrics.png",
       technologies:
         "Next.js, TypeScript, Tailwind, Nextauth, Prisma, MySQL, Recharts, Vercel",
       link: "agusto-finance-three.vercel.app",
@@ -39,14 +39,14 @@ export default function Page() {
     },
     {
       title: "SCISSOR",
-      image: "/screenshot1.jpg",
+      image: "/scissor.png",
       technologies: "React, Typescript, Tailwind, NodeJS, Redis, Render",
       link: "https://scissor-app-03ep.onrender.com/",
       description: "A url shortner with included caching using Redis",
     },
     {
       title: "SICKLE AID API  ",
-      image: "/screenshot1.jpg",
+      image: "/sickle.jpg",
       technologies:
         "NodeJS, Express, JWT, MongoDB, Mongoose, NodeMailer, Render",
       link: "https://scissor-app-03ep.onrender.com/",
@@ -54,26 +54,26 @@ export default function Page() {
     },
     {
       title: "GAWC",
-      image: "/screenshot1.jpg",
+      image: "/gawc.png",
       technologies: "Wordpress, Elementor, Hostinger",
       link: "https://goldenacewelfareclub.com/",
       description: "A landing page for a social welfare club.",
     },
     {
       title: "NZIMI CLEAN",
-      image: "/screenshot1.jpg",
+      image: "/nzimi.png",
       technologies: "Html, CSS, JS, Tidio, Jotform, Hostinger",
       link: "https://nzimiclean.de",
-      description: "A website for a cleaning company",
+      description: "A website for a dutch cleaning company",
     },
 
     {
       title: "PORTFOLIO",
-      image: "/screenshot1.jpg",
+      image: "/portfolio.png",
       technologies: "React, SCSS, StyledComponents, gsap, Netlify",
       link: "https://tinyurl.com/victor-okolo",
       description:
-        "My previous portfolio website, makes use of css preprocessing tools and techniques.",
+        "My previous portfolio website, makes use of css preprocessing tools and techniques and animations using GSAP.",
     },
   ];
 
