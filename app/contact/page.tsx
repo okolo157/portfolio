@@ -4,7 +4,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const SERVICE_ID = "service_vkwosh5";
@@ -17,22 +16,20 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
+    const form = e.currentTarget;
+
     try {
-      await emailjs.sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        e.currentTarget,
-        PUBLIC_KEY
-      );
+      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY);
       toast.success("Message sent successfully!");
-      e.currentTarget.reset();
+      form.reset(); // Now this will work properly
     } catch (error: unknown) {
       if (error instanceof Error) {
         console.error(error.message);
+        toast.error("Something went wrong! Please try again.");
       } else {
         console.error("An unknown error occurred.");
+        toast.error("An unknown error occurred.");
       }
-      toast.error("Something went wrong! Please try again.");
     } finally {
       setLoading(false);
     }
@@ -40,9 +37,8 @@ export default function Contact() {
 
   return (
     <div className="relative flex flex-col md:flex-row justify-evenly items-center min-h-screen p-10 overflow-hidden bg-gray-100 text-black">
-      <ToastContainer position="top-right" autoClose={3000} />
-
       {/* Animated Scrolling Text */}
+      <ToastContainer position="top-right" autoClose={3000} />
       <div className="absolute top-1/3 left-0 w-full overflow-hidden">
         <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 animate-marquee">
           HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU
