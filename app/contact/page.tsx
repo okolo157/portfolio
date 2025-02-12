@@ -40,7 +40,7 @@ export default function Contact() {
       {/* Animated Scrolling Text */}
       <ToastContainer position="top-right" autoClose={3000} />
       <div className="absolute top-1/3 left-0 w-full overflow-hidden">
-        <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 animate-marquee">
+        <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 z-20 animate-marquee">
           HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU
           &nbsp;
         </div>
