@@ -1,11 +1,47 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
+  const SERVICE_ID = "service_vkwosh5";
+  const TEMPLATE_ID = "template_052jnsd";
+  const PUBLIC_KEY = process.env.EMAILJS_KEY;
+
+  const [loading, setLoading] = useState(false);
+
+  const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        e.currentTarget,
+        PUBLIC_KEY
+      );
+      toast.success("Message sent successfully!");
+      e.currentTarget.reset();
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error(error.message);
+      } else {
+        console.error("An unknown error occurred.");
+      }
+      toast.error("Something went wrong! Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="relative flex flex-col md:flex-row justify-evenly items-center min-h-screen p-10 overflow-hidden bg-gray-100">
+    <div className="relative flex flex-col md:flex-row justify-evenly items-center min-h-screen p-10 overflow-hidden bg-gray-100 text-black">
+      <ToastContainer position="top-right" autoClose={3000} />
+
       {/* Animated Scrolling Text */}
       <div className="absolute top-1/3 left-0 w-full overflow-hidden">
         <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 animate-marquee">
@@ -18,7 +54,10 @@ export default function Contact() {
         <Image src="/porsche.jpg" alt="my image" width={400} height={200} />
       </div>
       <div className="relative z-10 w-full max-w-md">
-        <form className="space-y-4 bg-white p-10 w-full">
+        <form
+          onSubmit={handleOnSubmit}
+          className="space-y-4 bg-white p-10 w-full"
+        >
           <div className="flex flex-col">
             <label htmlFor="name" className="mb-2 font-medium text-gray-700">
               Name
@@ -26,7 +65,7 @@ export default function Contact() {
             <input
               type="text"
               id="name"
-              name="name"
+              name="from_name"
               required
               className="p-2 border border-gray-300 rounded"
             />
@@ -38,7 +77,7 @@ export default function Contact() {
             <input
               type="email"
               id="email"
-              name="email"
+              name="from_email"
               required
               className="p-2 border border-gray-300 rounded"
             />
@@ -56,9 +95,10 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="block mx-auto px-4 py-2 border border-black text-black hover:bg-slate-100 ease-in-out transition-colors"
+            className="block mx-auto px-4 py-2 border border-black text-black hover:bg-slate-100 ease-in-out transition-colors disabled:opacity-50"
+            disabled={loading}
           >
-            Submit
+            {loading ? "Sending..." : "Submit"}
           </button>
         </form>
       </div>
