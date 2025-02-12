@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 export default function Contact() {
   const SERVICE_ID = "service_vkwosh5";
   const TEMPLATE_ID = "template_052jnsd";
-  const PUBLIC_KEY = process.env.EMAILJS_KEY;
+  const PUBLIC_KEY = "WdDMD9QO3XkEHNHUP";
 
   const [loading, setLoading] = useState(false);
 
