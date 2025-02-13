@@ -10,8 +10,9 @@ export default function Homepage() {
         <Stack />
         <About />
       </div>
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-[100px] mix-blend-difference pointer-events-none">
-        *
+      {/* Fixed container with Flexbox for centering */}
+      <div className="fixed inset-0 flex justify-center items-center pointer-events-none mix-blend-difference">
+        <div className="font-bold text-[100px]">*</div>
       </div>
     </div>
   );
