@@ -6,7 +6,7 @@ import { Roboto_Mono } from "next/font/google";
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
-  weight: "500",
+  weight: "400",
 });
 
 export default function Intro() {
