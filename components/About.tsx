@@ -63,7 +63,7 @@ const About: React.FC = () => {
 
       <div className={robotoMono.className}>
         <div className="relative py-10 flex justify-center items-center  text-center text-white text-lg">
-          <p className=" lg:block absolute left-10 m-10 text-gray-400 font-bold text-4xl">
+          <p className="hidden lg:block absolute left-10 m-10 text-gray-400 font-bold text-4xl">
             *
           </p>
 
@@ -75,7 +75,7 @@ const About: React.FC = () => {
             masterpiece, and I loved every moment of it.
           </p>
 
-          <p className=" lg:block absolute right-10 m-10 font-bold text-gray-400 text-4xl">
+          <p className="hidden lg:block absolute right-10 m-10 font-bold text-gray-400 text-4xl">
             *
           </p>
         </div>
