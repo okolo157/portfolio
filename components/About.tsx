@@ -29,13 +29,7 @@ const About: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const firstImageSet: string[] = [
-    "/directing.jpg",
-    "/newnw.png",
-    "/audio.jpg",
-    "/directing2.jpg",
-    "/camera2.jpg",
-  ];
+  const firstImageSet: string[] = ["/newnw.png", "/directing2.jpg"];
   const thirdImageSet: string[] = ["/newnew.jpg", "/tobams.png", "/third.jpg"];
 
   return (
@@ -43,11 +37,11 @@ const About: React.FC = () => {
       <div className="relative flex flex-col items-center min-h-screen p-2 mt-10 ">
         <Image src="/bg-dark.jpg" width={300} height={100} alt="background" />
 
-        <h1 className="font-bold lg:text-[100px] text-4xl mt-10 text-center">
+        <h1 className="absolute top-40 font-bold lg:text-[100px] text-4xl mt-10 text-center">
           BORN A CREATIVE
         </h1>
 
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 my-[100px] ">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-10 my-[80px] ">
           {firstImageSet.map((src: string, index: number) => (
             <div
               key={index}
@@ -58,7 +52,7 @@ const About: React.FC = () => {
               <Image
                 src={src}
                 alt={`Image ${index + 1}`}
-                width={200}
+                width={300}
                 height={200}
                 className="object-cover"
               />
@@ -69,7 +63,7 @@ const About: React.FC = () => {
 
       <div className={robotoMono.className}>
         <div className="relative py-10 flex justify-center items-center  text-center text-white text-lg">
-          <p className="hidden lg:block absolute left-10 m-10 text-gray-400 font-bold text-4xl">
+          <p className=" lg:block absolute left-10 m-10 text-gray-400 font-bold text-4xl">
             *
           </p>
 
@@ -81,7 +75,7 @@ const About: React.FC = () => {
             masterpiece, and I loved every moment of it.
           </p>
 
-          <p className="hidden lg:block absolute right-10 m-10 font-bold text-gray-400 text-4xl">
+          <p className=" lg:block absolute right-10 m-10 font-bold text-gray-400 text-4xl">
             *
           </p>
         </div>
@@ -126,7 +120,7 @@ const About: React.FC = () => {
         </div>
         <button
           onClick={() => router.push("/work")}
-          className="border border-black p-3 hover:bg-white text-sm mt-2 hover:text-black transition-colors ease-in-out w-2/3 lg:w-1/4 self-center"
+          className="border border-black p-4 hover:bg-black hover:text-white text-sm mt-10 transition-all ease-in-out w-2/3 lg:w-1/4 self-center  shadow-lg hover:shadow-xl text-center"
         >
           CHECK OUT MORE STUFF
         </button>

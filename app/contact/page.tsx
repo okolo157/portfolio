@@ -8,7 +8,8 @@ import { ToastContainer, toast } from "react-toastify";
 export default function Contact() {
   const SERVICE_ID = "service_vkwosh5";
   const TEMPLATE_ID = "template_052jnsd";
-  const PUBLIC_KEY = process.env.EMAILJS_KEY;
+  const PUBLIC_KEY = "WdDMD9QO3XkEHNHUP";
+  //this is intentional, nobody cares about hacking my gmail
 
   const [loading, setLoading] = useState(false);
 
@@ -21,7 +22,7 @@ export default function Contact() {
     try {
       await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY);
       toast.success("Message sent successfully!");
-      form.reset(); // Now this will work properly
+      form.reset();
     } catch (error: unknown) {
       if (error instanceof Error) {
         console.error(error.message);
@@ -40,7 +41,7 @@ export default function Contact() {
       {/* Animated Scrolling Text */}
       <ToastContainer position="top-right" autoClose={3000} />
       <div className="absolute top-1/3 left-0 w-full overflow-hidden">
-        <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 z-20 animate-marquee">
+        <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 animate-marquee">
           HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU
           &nbsp;
         </div>
