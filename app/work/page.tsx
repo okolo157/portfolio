@@ -16,7 +16,7 @@ export default function Page() {
       image: "/screenshot1.jpg",
       technologies:
         "MongoDB, Express, React, NodeJS, Mongoose, Gemini, StyledComponents, Render",
-      link: "https://recreate-ai/onrender.com",
+      link: "https://recreate-ai.onrender.com",
       description:
         "An AI web app that can be used to convert UI into code from just a screenshot/mockup.",
     },
@@ -33,7 +33,7 @@ export default function Page() {
       image: "/metrics.png",
       technologies:
         "Next.js, TypeScript, Tailwind, Nextauth, Prisma, MySQL, Recharts, Vercel",
-      link: "agusto-finance-three.vercel.app",
+      link: "https://agusto-finance-three.vercel.app",
       description:
         "A fully auth enabled website with the ability transform smaller CSV dasets into a comprehensive graph.",
     },
