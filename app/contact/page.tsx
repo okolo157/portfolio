@@ -9,7 +9,6 @@ export default function Contact() {
   const SERVICE_ID = "service_vkwosh5";
   const TEMPLATE_ID = "template_052jnsd";
   const PUBLIC_KEY = "WdDMD9QO3XkEHNHUP";
-  //this is intentional, nobody cares about hacking my gmail
 
   const [loading, setLoading] = useState(false);
 
