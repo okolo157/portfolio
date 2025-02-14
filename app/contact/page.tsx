@@ -10,6 +10,8 @@ export default function Contact() {
   const TEMPLATE_ID = "template_052jnsd";
   const PUBLIC_KEY = "WdDMD9QO3XkEHNHUP";
 
+  //if ur seeing this, exposing this is on purpose, nobody is going to intercept my emails
+
   const [loading, setLoading] = useState(false);
 
   const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
