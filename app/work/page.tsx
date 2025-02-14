@@ -13,7 +13,7 @@ export default function Page() {
   const projects = [
     {
       title: "RECREATE AI [🚧WIP] ",
-      image: "/screenshot1.jpg",
+      image: "/screenshot1.webp",
       technologies:
         "MongoDB, Express, React, NodeJS, Mongoose, Gemini, StyledComponents, Render",
       link: "https://recreate-ai.onrender.com",
@@ -22,7 +22,7 @@ export default function Page() {
     },
     {
       title: "TOBAMS BLOG",
-      image: "/tobams.png",
+      image: "/tobams.webp",
       technologies: "Next.js, TypeScript, Tailwind, Cypress, Vercel",
       link: "https://blogging-app-virid.vercel.app",
       description:
@@ -30,7 +30,7 @@ export default function Page() {
     },
     {
       title: "METRICS VISUALIZER",
-      image: "/metrics.png",
+      image: "/metrics.webp",
       technologies:
         "Next.js, TypeScript, Tailwind, Nextauth, Prisma, MySQL, Recharts, Vercel",
       link: "https://agusto-finance-three.vercel.app",
@@ -39,14 +39,14 @@ export default function Page() {
     },
     {
       title: "SCISSOR",
-      image: "/scissor.png",
+      image: "/scissor.webp",
       technologies: "React, Typescript, Tailwind, NodeJS, Redis, Render",
       link: "https://scissor-app-03ep.onrender.com/",
       description: "A url shortner with included caching using Redis",
     },
     {
       title: "SICKLE AID API  ",
-      image: "/sickle.jpg",
+      image: "/sickle.webp",
       technologies:
         "NodeJS, Express, JWT, MongoDB, Mongoose, NodeMailer, Render",
       link: "https://scissor-app-03ep.onrender.com/",
@@ -54,14 +54,14 @@ export default function Page() {
     },
     {
       title: "GAWC",
-      image: "/gawc.png",
+      image: "/gawc.webp",
       technologies: "Wordpress, Elementor, Hostinger",
       link: "https://goldenacewelfareclub.com/",
       description: "A landing page for a social welfare club.",
     },
     {
       title: "NZIMI CLEAN",
-      image: "/nzimi.png",
+      image: "/nzimi.webp",
       technologies: "Html, CSS, JS, Tidio, Jotform, Hostinger",
       link: "https://nzimiclean.de",
       description: "A website for a dutch cleaning company",
@@ -69,7 +69,7 @@ export default function Page() {
 
     {
       title: "PORTFOLIO",
-      image: "/portfolio.png",
+      image: "/portfolio.webp",
       technologies: "React, SCSS, StyledComponents, gsap, Netlify",
       link: "https://tinyurl.com/victor-okolo",
       description:

@@ -14,7 +14,7 @@ export default function Intro() {
     <div
       className="min-h-[80vh] flex items-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/ikoyi-bridge.jpg')",
+        backgroundImage: "url('/ikoyi-bridge.webp')",
       }}
     >
       <div className={`${robotoMono.className} relative z-10`}>

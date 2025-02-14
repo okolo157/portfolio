@@ -29,13 +29,13 @@ const About: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const firstImageSet: string[] = ["/newnw.png", "/directing2.jpg"];
-  const thirdImageSet: string[] = ["/newnew.jpg", "/tobams.png", "/third.jpg"];
+  const firstImageSet: string[] = ["/newnw.webp", "/directing2.webp"];
+  const thirdImageSet: string[] = ["/newnew.webp", "/tobams.webp", "/third.webp"];
 
   return (
     <>
       <div className="relative flex flex-col items-center min-h-screen p-2 mt-10 ">
-        <Image src="/bg-dark.jpg" width={300} height={100} alt="background" />
+        <Image src="/bg-dark.webp" width={300} height={100} alt="background" />
 
         <h1 className="absolute top-40 font-bold lg:text-[100px] text-4xl mt-10 text-center">
           BORN A CREATIVE
