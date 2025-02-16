@@ -24,19 +24,19 @@ export default function Homepage() {
             if (entry.isIntersecting || scrollDirection === "down") {
               setStackVisible(true);
             } else {
-              setStackVisible(false); // Only fade out when scrolling up
+              setStackVisible(false); 
             }
           }
           if (entry.target === aboutRef.current) {
             if (entry.isIntersecting || scrollDirection === "down") {
               setAboutVisible(true);
             } else {
-              setAboutVisible(false); // Only fade out when scrolling up
+              setAboutVisible(false); 
             }
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     if (stackRef.current) observer.observe(stackRef.current);
