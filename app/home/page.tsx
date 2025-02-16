@@ -51,7 +51,7 @@ export default function Homepage() {
         <Intro />
         <div
           ref={stackRef}
-          className={`transition-opacity duration-1000 ease-in-out ${
+          className={`transition-opacity duration-500 ease-in-out ${
             stackVisible ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -59,7 +59,7 @@ export default function Homepage() {
         </div>
         <div
           ref={aboutRef}
-          className={`transition-opacity duration-1000 ease-in-out ${
+          className={`transition-opacity duration-500 ease-in-out ${
             aboutVisible ? "opacity-100" : "opacity-0"
           }`}
         >
