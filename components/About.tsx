@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { Roboto_Mono } from "next/font/google";
 import { useRouter } from "next/navigation";
@@ -12,25 +12,14 @@ const robotoMono = Roboto_Mono({
 });
 
 const About: React.FC = () => {
-  const [showImages, setShowImages] = useState<boolean>(false);
-
   const router = useRouter();
 
-  useEffect(() => {
-    const handleScroll = (): void => {
-      if (window.scrollY > 100) {
-        setShowImages(true);
-      } else {
-        setShowImages(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const firstImageSet: string[] = ["/newnw.webp", "/directing2.webp"];
-  const thirdImageSet: string[] = ["/newnew.webp", "/tobams.webp", "/third.webp"];
+  const secondImageSet: string[] = [
+    "/newnew.webp",
+    "/tobams.webp",
+    "/third.webp",
+  ];
 
   return (
     <>
@@ -45,9 +34,7 @@ const About: React.FC = () => {
           {firstImageSet.map((src: string, index: number) => (
             <div
               key={index}
-              className={`relative transition-opacity duration-1000 ease-in-out ${
-                showImages ? "opacity-100" : "opacity-0"
-              }`}
+              className="relative transition-opacity duration-1000 ease-in-out"
             >
               <Image
                 src={src}
@@ -99,14 +86,11 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Third Image Set */}
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 ">
-          {thirdImageSet.map((src: string, index: number) => (
+          {secondImageSet.map((src: string, index: number) => (
             <div
               key={index}
-              className={`relative transition-opacity duration-1000 ease-in-out flex flex-col${
-                showImages ? "opacity-100" : "opacity-0"
-              }`}
+              className="relative transition-opacity duration-1000 ease-in-out flex flex-col"
             >
               <Image
                 src={src}
