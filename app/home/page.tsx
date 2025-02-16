@@ -4,13 +4,15 @@ import React, { useEffect, useState, useRef } from "react";
 import About from "@/components/About";
 import Intro from "@/components/IntroScreen";
 import Stack from "@/components/Stack";
+import Transitioning from "@/components/Transitioning";
 
 export default function Homepage() {
   const [stackVisible, setStackVisible] = useState(false);
   const [aboutVisible, setAboutVisible] = useState(false);
   const stackRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
-  const lastScrollY = useRef(0); // Track scroll direction
+  const transRef = useRef<HTMLDivElement | null>(null);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -24,23 +26,31 @@ export default function Homepage() {
             if (entry.isIntersecting || scrollDirection === "down") {
               setStackVisible(true);
             } else {
-              setStackVisible(false); 
+              setStackVisible(false);
             }
           }
           if (entry.target === aboutRef.current) {
             if (entry.isIntersecting || scrollDirection === "down") {
               setAboutVisible(true);
             } else {
-              setAboutVisible(false); 
+              setAboutVisible(false);
+            }
+          }
+          if (entry.target === transRef.current) {
+            if (entry.isIntersecting || scrollDirection === "down") {
+              setStackVisible(true);
+            } else {
+              setStackVisible(false);
             }
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     if (stackRef.current) observer.observe(stackRef.current);
     if (aboutRef.current) observer.observe(aboutRef.current);
+    if (transRef.current) observer.observe(transRef.current);
 
     return () => observer.disconnect();
   }, []);
@@ -64,6 +74,14 @@ export default function Homepage() {
           }`}
         >
           <About />
+        </div>
+        <div
+          ref={transRef}
+          className={`transition-opacity duration-500 ease-in-out ${
+            aboutVisible ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Transitioning />
         </div>
       </div>
       <div className="fixed inset-0 flex justify-center items-center pointer-events-none mix-blend-difference">
