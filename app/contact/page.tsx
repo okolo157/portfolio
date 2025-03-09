@@ -10,7 +10,7 @@ export default function Contact() {
   const TEMPLATE_ID = "template_052jnsd";
   const PUBLIC_KEY = "WdDMD9QO3XkEHNHUP";
 
-  //if ur seeing this, exposing key is on purpose, nobody is going to intercept my emails
+  //if you're seeing this, exposing key is on purpose, nobody is going to intercept my emails if we're being honest
 
   const [loading, setLoading] = useState(false);
 
