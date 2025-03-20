@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { Roboto_Mono } from "next/font/google";
+import GitHubCalendar from "@/components/GithubCalendar";
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
@@ -49,7 +50,7 @@ export default function Page() {
       image: "/sickle.webp",
       technologies:
         "NodeJS, Express, JWT, MongoDB, Mongoose, NodeMailer, Render",
-      link: "https://scissor-app-03ep.onrender.com/",
+      // link: "https://scissor-app-03ep.onrender.com/",
       description: "An API for a react native application called 'sickle-aid'",
     },
     {
@@ -78,11 +79,18 @@ export default function Page() {
   ];
 
   return (
-    <div className="bg-black text-white flex flex-col gap-16 p-10">
+  <>
+    <div>
+      <div className='p-10'>
+        <GitHubCalendar username="okolo157" />
+      </div>
+    </div>
+    <div className="bg-black text-white flex flex-col gap-16 p-20">
+      <h1 className="font-bold text-5xl text-center mb-3">PROJECTS</h1>
       {projects.map((project, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row gap-8 md:gap-16 items-center  bg-black text-white"
+          className="flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center bg-black text-white"
         >
           <Image
             src={project.image}
@@ -90,7 +98,7 @@ export default function Page() {
             height={300}
             alt={project.title}
           />
-          <div className="text-center md:text-left flex flex-col gap-4 w-full md:w-1/2 p-4">
+          <div className="text-center md:text-left flex  justify-end items-end flex-col gap-4 w-full md:w-1/2 p-4">
             {project.link && (
               <Link
                 href={project.link}
@@ -99,11 +107,11 @@ export default function Page() {
                 {project.title}
               </Link>
             )}
-            <p className="w-full md:w-2/3">{project.description}</p>
+            <p className="w-full md:w-2/3 text-right">{project.description}</p>
             <p className={robotoMono.className}>{project.technologies}</p>
           </div>
         </div>
       ))}
-    </div>
+    </div></>
   );
 }

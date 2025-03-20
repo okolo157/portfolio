@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ["github-readme-stats.vercel.app"],
+        dangerouslyAllowSVG: true, // Allow SVGs
+        contentSecurityPolicy: "default-src 'self'; img-src * data: blob:;", // Add CSP for security
+    },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
