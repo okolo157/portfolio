@@ -94,14 +94,14 @@ export default function Page() {
           />
           <div className="text-center md:text-left flex  justify-end items-end flex-col gap-4 w-full md:w-1/2 p-4">
             {project.link && (
-              <Link
-                href={project.link}
-                className="font-bold text-3xl hover:text-blue-300 transition-colors ease-in-out"
-              >
-                {project.title}
-              </Link>
+                <Link
+                    href={project.link}
+                    className="font-bold text-3xl sm:text-center md:text-center md:self-center self-center lg:self-end lg:text-right hover:text-blue-300 transition-colors ease-in-out"
+                >
+                  {project.title}
+                </Link>
             )}
-            <p className="w-full md:w-2/3 text-right">{project.description}</p>
+            <p className="w-full md:w-2/3 lg:text-right">{project.description}</p>
             <p className={robotoMono.className}>{project.technologies}</p>
           </div>
         </div>
