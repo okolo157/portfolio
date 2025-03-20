@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { fetchGithubStats } from "@/app/api/github/route";
+import {fetchGithubStats} from "@/app/utils/githubapi";
 import { FaCodeBranch, FaRegStar, FaBug } from "react-icons/fa";
 import { VscGitCommit } from "react-icons/vsc";
 
