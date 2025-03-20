@@ -11,8 +11,7 @@ const robotoMono = Roboto_Mono({
 export default function Footer() {
   return (
     <div className={robotoMono.className}>
-      
-      <div className="flex flex-col justify-center text-xl sm:text-2xl md:text-3xl p-4 sm:p-6 md:p-10 items-center gap-4 sm:gap-5 md:gap-7 max-w-7xl mx-auto">
+      <div className="flex flex-col  justify-center text-xl sm:text-2xl md:text-3xl p-4 sm:p-6 md:p-10 items-center gap-4 sm:gap-5 md:gap-7 max-w-7xl mx-auto">
         <div className="flex justify-center items-center gap-4 sm:gap-6 md:gap-10">
           <p>*</p>
           <p className="text-base sm:text-lg md:text-xl">Victor Okolo</p>
@@ -23,7 +22,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/okolo157"
-            className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Github
           </Link>
@@ -31,7 +30,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://linkedin.com/in/victorokolo11"
-            className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             LinkedIn
           </Link>
@@ -39,7 +38,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://wa.me/2349110591628"
-            className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Whatsapp
           </Link>
@@ -47,7 +46,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://flowcv.com/resume/ilbnbmi60q"
-            className="border text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Resume
           </Link>

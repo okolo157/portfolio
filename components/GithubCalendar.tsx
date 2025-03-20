@@ -40,7 +40,7 @@ const GitHubStats = ({ username }: { username: string }) => {
   if (error) return <div className="text-red-500 text-center">{`${ERROR_PREFIX} ${error}`}</div>;
 
   return (
-      <div className="p-6">
+      <div className="p-6 w-full">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { label: "Commits", value: stats?.commits, color: "bg-blue-500", Icon: VscGitCommit },

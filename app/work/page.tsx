@@ -80,13 +80,7 @@ export default function Page() {
 
   return (
   <>
-    <div>
-      <div className='p-10'>
-        <GitHubCalendar username="okolo157" />
-      </div>
-    </div>
     <div className="bg-black text-white flex flex-col gap-16 p-20">
-      <h1 className="font-bold text-5xl text-center mb-3">PROJECTS</h1>
       {projects.map((project, index) => (
         <div
           key={index}
@@ -112,6 +106,11 @@ export default function Page() {
           </div>
         </div>
       ))}
-    </div></>
+    <div className='p-5 flex flex-col gap-7 items-center justify-center w-full'>
+      <hr className='border-white w-4/5'/>
+      <p className='font-bold text-lg'>GitHub Stats</p>
+      <GitHubCalendar username="okolo157" />
+    </div>
+  </div></>
   );
 }
