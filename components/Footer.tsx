@@ -17,12 +17,12 @@ export default function Footer() {
           <p className="text-base sm:text-lg md:text-xl">Victor Okolo</p>
           <p>*</p>
         </div>
-        <div className="flex  justify-center text-xs sm:text-sm md:text-base gap-2 sm:gap-3 md:gap-4 max-w-full px-1">
+        <div className="flex justify-center text-xs sm:text-sm md:text-base gap-2 sm:gap-3 md:gap-4 max-w-full px-1">
           <Link
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/okolo157"
-            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Github
           </Link>
@@ -30,7 +30,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://linkedin.com/in/victorokolo11"
-            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             LinkedIn
           </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://wa.me/2349110591628"
-            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Whatsapp
           </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://flowcv.com/resume/ilbnbmi60q"
-            className="border border-black text-black hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Resume
           </Link>
