@@ -19,7 +19,7 @@ export default function Stack() {
         </p>
         <button
           onClick={() => router.push("/work")}
-          className="border p-3 hover:bg-white text-sm mt-2 hover:text-black transition-colors ease-in-out mr-4 sm:mr-6 md:mr-8 lg:mr-10"
+          className="border p-3 hover:bg-white text-white text-sm mt-2 hover:text-black transition-colors ease-in-out mr-4 sm:mr-6 md:mr-8 lg:mr-10"
         >
           CHECK OUT MY STUFF
         </button>
