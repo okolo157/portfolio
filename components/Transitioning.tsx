@@ -17,7 +17,7 @@ export default function Transitioning() {
     "/third.webp",
   ];
   return (
-    <div className="bg-slate-100 text-black flex flex-col gap-10 my-10 py-10">
+    <div className="bg-white text-black flex flex-col gap-10 my-10 py-10">
       <h1 className=" font-bold lg:text-[100px] text-4xl text-center">
         TRANSITIONING
       </h1>
