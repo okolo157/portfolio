@@ -56,7 +56,7 @@ export default function Homepage() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-black">
       <div className="relative">
         <Intro />
         <div
