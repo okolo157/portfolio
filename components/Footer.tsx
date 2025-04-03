@@ -11,7 +11,7 @@ const robotoMono = Roboto_Mono({
 export default function Footer() {
   return (
     <div className={robotoMono.className}>
-      <div className="flex flex-col  justify-center text-xl sm:text-2xl md:text-3xl p-4 sm:p-6 md:p-10 items-center gap-4 sm:gap-5 md:gap-7 max-w-7xl mx-auto">
+      <div className="flex flex-col bg-black justify-center text-xl sm:text-2xl md:text-3xl p-4 sm:p-6 md:p-10 items-center gap-4 sm:gap-5 md:gap-7 max-w-7xl mx-auto">
         <div className="flex justify-center items-center gap-4 sm:gap-6 md:gap-10">
           <p>*</p>
           <p className="text-base sm:text-lg md:text-xl">Victor Okolo</p>
