@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [router]);
 
   return (
-    <nav className="flex justify-center md:justify-between py-5 gap-4 sm:gap-6 md:gap-14 px-4 sm:px-8 md:px-14">
+    <nav className="flex justify-center md:justify-between py-5 gap-4 sm:gap-6 md:gap-14 px-4 sm:px-8 md:px-14 bg-black text-white">
       <div className="flex flex-col justify-center w-1/3">
         <Link
           href="/"
