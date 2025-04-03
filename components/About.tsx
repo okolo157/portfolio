@@ -15,7 +15,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="relative flex flex-col items-center min-h-screen p-2 mt-10 ">
+      <div className="relative flex flex-col items-center min-h-screen p-2 mt-10 bg-black">
         <Image src="/bg-dark.webp" width={300} height={100} alt="background" />
 
         <h1 className="absolute top-40 font-bold lg:text-[100px] text-4xl mt-10 text-center">
