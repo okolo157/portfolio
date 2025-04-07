@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -10,9 +8,8 @@ export default function Contact() {
   const TEMPLATE_ID = "template_052jnsd";
   const PUBLIC_KEY = "WdDMD9QO3XkEHNHUP";
 
-  //if you're seeing this, exposing key is on purpose, nobody is going to intercept my emails if we're being honest
-
   const [loading, setLoading] = useState(false);
+  const [imageLoading, setImageLoading] = useState(true);
 
   const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -40,6 +37,13 @@ export default function Contact() {
   return (
     <div className="relative flex flex-col md:flex-row justify-evenly items-center min-h-screen p-10 overflow-hidden bg-gray-100 text-black">
       <ToastContainer position="top-right" autoClose={3000} />
+
+      {imageLoading && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-300 bg-opacity-60 backdrop-blur-sm animate-fade">
+          <div className="w-40 h-40 bg-gray-400 rounded-lg animate-pulse"></div>
+        </div>
+      )}
+
       <div className="absolute top-1/3 left-0 w-full overflow-hidden">
         <div className="whitespace-nowrap text-8xl font-bold text-black opacity-20 animate-marquee">
           HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU &nbsp; HMU
@@ -48,8 +52,15 @@ export default function Contact() {
       </div>
 
       <div className="relative z-10 mb-10 md:mb-0 md:mr-10">
-        <Image src="/porsche.webp" alt="my image" width={400} height={200} />
+        <Image
+          src="/porsche.webp"
+          alt="my image"
+          width={400}
+          height={200}
+          onLoadingComplete={() => setImageLoading(false)}
+        />
       </div>
+
       <div className="relative z-10 w-full max-w-md">
         <form
           onSubmit={handleOnSubmit}
@@ -112,6 +123,18 @@ export default function Contact() {
         .animate-marquee {
           display: inline-block;
           animation: marquee 10s linear infinite;
+        }
+
+        @keyframes fade {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        .animate-fade {
+          animation: fade 0.3s ease-in-out forwards;
         }
       `}</style>
     </div>
