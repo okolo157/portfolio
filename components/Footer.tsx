@@ -37,7 +37,7 @@ export default function Footer() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://wa.me/2349110591628"
+            href="https://wa.me/2349044848699"
             className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
           >
             Whatsapp
