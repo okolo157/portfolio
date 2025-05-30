@@ -22,7 +22,7 @@ const GITHUB_STATS_QUERY = `
 
 // Helper functions
 function validateEnvironment() {
-    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+    const token = "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";
     if (!token) {
         console.error("No GitHub token found!");
         throw new Error("GitHub token is required");
