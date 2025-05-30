@@ -24,7 +24,7 @@ const GITHUB_STATS_QUERY = `
 function validateEnvironment() {
     // Use a public env variable if you need this client-side, or a private one for server-side only
     const token = typeof process !== "undefined"
-        ? process.env.NEXT_PUBLIC_GITHUB_TOKEN || process.env.GITHUB_TOKEN || "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"
+        ? process.env.NEXT_PUBLIC_GITHUB_TOKEN || process.env.GITHUB_TOKEN
         : "";
 
     if (!token) {
