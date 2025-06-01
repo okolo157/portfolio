@@ -68,7 +68,7 @@ export default function PortfolioPage() {
       image: "https://i.imgur.com/tpqEuib.jpeg",
       description:
         "Exploring geometric forms through digital sculpting techniques",
-      tools: ["Blender", "ZBrush", "KeyShot"],
+      tools: ["Blender", "p3d", "After Effects"],
       type: "Personal Project",
       hasVideo: true,
       videoUrl:
@@ -83,7 +83,7 @@ export default function PortfolioPage() {
       year: "2024",
       image: "https://i.imgur.com/6lt3Ahc.jpeg",
       description: "Ad for a lotion company.",
-      tools: ["3ds Max", "V-Ray", "Photoshop"],
+      tools: ["Blender", "Premiere Pro", "Photoshop"],
       type: "Client Work",
       hasVideo: true,
       videoUrl:
@@ -95,8 +95,8 @@ export default function PortfolioPage() {
       category: "logo",
       year: "2025",
       image: "https://i.imgur.com/IS4IxhH.jpeg",
-      description: "Logo animation fora church.",
-      tools: ["3ds Max", "V-Ray", "Photoshop"],
+      description: "Logo design and animation for Abiding Word Evangelical Church.",
+      tools: ["3ds Max", "Photoshop"],
       type: "Client Work",
       hasVideo: true,
       videoUrl:
@@ -109,7 +109,7 @@ export default function PortfolioPage() {
       year: "2023",
       image: "https://i.imgur.com/V8KnOk5.jpeg",
       description: "Sleek wireless headphone design with focus on ergonomics",
-      tools: ["Fusion 360", "KeyShot", "Illustrator"],
+      tools: ["Blender", "Illustrator"],
       hasVideo: true,
       type: "Concept Design",
       videoUrl:
@@ -123,7 +123,7 @@ export default function PortfolioPage() {
       image: "https://i.imgur.com/vbm1urX.jpeg",
       description:
         "Stylized character exploration with emphasis on form and poses",
-      tools: ["ZBrush", "Maya", "Substance Painter"],
+      tools: [ "Maya", "Substance Painter"],
       type: "Character Design",
       hasDocument: true,
       documentUrl:
@@ -136,7 +136,7 @@ export default function PortfolioPage() {
       year: "2023",
       image: "https://i.imgur.com/VOBgzyC.jpeg",
       description: "Technical visualization of interior spaces and structures",
-      tools: ["SolidWorks", "KeyShot", "After Effects"],
+      tools: ["Blender", "Photoshop"],
       type: "Technical Render",
       hasGallery: true,
       galleryImages: [
@@ -152,8 +152,8 @@ export default function PortfolioPage() {
       year: "2025",
       image: "https://i.imgur.com/4sRIa4m.jpeg",
       description: "Logo for a food brand.",
-      tools: ["SolidWorks", "KeyShot", "After Effects"],
-      type: "Logo design",
+      tools: ["Illustrator"],
+      type: "Client Work",
       hasGallery: true,
       galleryImages: [
         "https://drive.google.com/file/d/1-l7Lk6ouyZ_iLb9OzLQB2MEnlApTMuxJ/preview",
@@ -166,7 +166,7 @@ export default function PortfolioPage() {
       year: "2025",
       image: "https://i.imgur.com/T7iCvNO.jpeg",
       description: "Logo for a bill payment web app",
-      tools: ["SolidWorks", "KeyShot", "After Effects"],
+      tools: ["Illustrator"],
       type: "Client Work",
       hasGallery: true,
       galleryImages: [
@@ -180,7 +180,7 @@ export default function PortfolioPage() {
       year: "2024",
       image: "https://imgur.com/FHgwD4z.jpeg",
       description: "Film Animation project presentation cover design + logo.",
-      tools: ["3ds Max", "V-Ray", "Photoshop"],
+      tools: ["Illustrator", "Photoshop"],
       type: "Client Work",
       hasGallery: true,
       galleryImages: [
@@ -196,7 +196,7 @@ export default function PortfolioPage() {
       year: "2024",
       image: "https://imgur.com/BtkdRTv.jpeg",
       description: "Logo for a betting company.",
-      tools: ["3ds Max", "V-Ray", "Photoshop"],
+      tools: ["Illustrator", "Photoshop"],
       type: "Client Work",
       hasGallery: true,
       galleryImages: [
