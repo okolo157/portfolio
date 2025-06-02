@@ -107,6 +107,7 @@ export default function Page() {
             <div className="w-full md:w-1/2 flex flex-col gap-3 text-center md:text-left">
               {project.link ? (
                 <Link
+                  target="_blank"
                   href={project.link}
                   className="font-bold text-2xl md:text-3xl text-blue-400 hover:text-blue-300 transition-colors ease-in-out"
                 >
