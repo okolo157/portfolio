@@ -95,7 +95,8 @@ export default function PortfolioPage() {
       category: "logo",
       year: "2025",
       image: "https://i.imgur.com/IS4IxhH.jpeg",
-      description: "Logo design and animation for Abiding Word Evangelical Church.",
+      description:
+        "Logo design and animation for Abiding Word Evangelical Church.",
       tools: ["3ds Max", "Photoshop"],
       type: "Client Work",
       hasVideo: true,
@@ -123,7 +124,7 @@ export default function PortfolioPage() {
       image: "https://i.imgur.com/vbm1urX.jpeg",
       description:
         "Stylized character exploration with emphasis on form and poses",
-      tools: [ "Maya", "Substance Painter"],
+      tools: ["Maya", "Substance Painter"],
       type: "Character Design",
       hasDocument: true,
       documentUrl:
