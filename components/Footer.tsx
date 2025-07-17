@@ -50,6 +50,14 @@ export default function Footer() {
           >
             Resume
           </Link>
+           <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://okolo157.github.io/rate-card/"
+            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
+          >
+            Rate Card
+          </Link>
         </div>
       </div>
     </div>
