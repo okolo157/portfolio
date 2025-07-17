@@ -11,55 +11,37 @@ const robotoMono = Roboto_Mono({
 export default function Footer() {
   return (
     <div className={robotoMono.className}>
-      <div className="flex flex-col bg-black justify-center text-xl sm:text-2xl md:text-3xl p-4 sm:p-6 md:p-10 items-center gap-4 sm:gap-5 md:gap-7 max-w-7xl mx-auto">
-        <div className="flex justify-center items-center gap-4 sm:gap-6 md:gap-10 text-white">
-          <p>*</p>
-          <p className="text-base sm:text-lg md:text-xl">Victor Okolo</p>
-          <p>*</p>
+      <footer className="bg-black text-white w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-6 sm:py-10 flex flex-col items-center gap-6">
+          {/* Name Row */}
+          <div className="flex items-center justify-center gap-3 sm:gap-6 text-lg sm:text-xl md:text-2xl">
+            <span>*</span>
+            <span>Victor Okolo</span>
+            <span>*</span>
+          </div>
+
+          {/* Links Row */}
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 text-xs sm:text-sm md:text-base text-center px-2">
+            {[
+              { label: "Github", href: "https://github.com/okolo157" },
+              { label: "LinkedIn", href: "https://linkedin.com/in/victorokolo11" },
+              { label: "Whatsapp", href: "https://wa.me/2349044848699" },
+              { label: "Resume", href: "https://flowcv.com/resume/ilbnbmi60q" },
+              { label: "Rate Card", href: "https://okolo157.github.io/rate-card/" },
+            ].map(({ label, href }) => (
+              <Link
+                key={label}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={href}
+                className="border border-white px-3 py-1.5 hover:bg-white hover:text-black transition-colors duration-200 rounded"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="flex justify-center text-xs sm:text-sm md:text-base gap-2 sm:gap-3 md:gap-4 max-w-full px-1">
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/okolo157"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
-          >
-            Github
-          </Link>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://linkedin.com/in/victorokolo11"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
-          >
-            LinkedIn
-          </Link>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://wa.me/2349044848699"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
-          >
-            Whatsapp
-          </Link>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://flowcv.com/resume/ilbnbmi60q"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
-          >
-            Resume
-          </Link>
-           <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://okolo157.github.io/rate-card/"
-            className="border border-white text-white hover:bg-white hover:text-black transition-colors ease-in-out p-2 sm:p-3 m-1"
-          >
-            Rate Card
-          </Link>
-        </div>
-      </div>
+      </footer>
     </div>
   );
 }
