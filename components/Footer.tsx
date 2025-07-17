@@ -34,7 +34,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href={href}
-                className="border border-white px-3 py-1.5 hover:bg-white hover:text-black transition-colors duration-200 rounded"
+                className="border border-white px-3 py-1.5 hover:bg-white hover:text-black transition-colors duration-200"
               >
                 {label}
               </Link>
