@@ -46,7 +46,6 @@ const GitHubStats = ({ username, since, until }: { username: string; since?: str
         <div className="p-6 w-full">
             <div className="text-center mb-4">
                 <p className="text-gray-500 text-sm">{stats?.timePeriod || "Unknown time period"}</p>
-                <p className="text-gray-500 text-xs">Note: Only commits are time-filtered; other stats are all-time totals.</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
