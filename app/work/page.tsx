@@ -55,7 +55,7 @@ export default function Page() {
     },
     {
       title: "SICKLE AID API",
-      image: "/sickle.webp",
+      image: "/hospitalapi.jpg",
       technologies:
         "NodeJS, Express, JWT, MongoDB, Mongoose, NodeMailer, Render",
       description: "An API for a React Native app called 'Sickle-Aid'.",
