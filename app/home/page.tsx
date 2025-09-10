@@ -3,7 +3,7 @@ import About from "@/components/About";
 import Intro from "@/components/IntroScreen";
 import Stack from "@/components/Stack";
 import Transitioning from "@/components/Transitioning";
-import App from "@/components/App"; // 👈 import your lottie
+import App from "@/components/Lottie";
 
 export default function Homepage() {
   const [stackVisible, setStackVisible] = useState(false);
