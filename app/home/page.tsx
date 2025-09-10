@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useState, useRef } from "react";
 import About from "@/components/About";
 import Intro from "@/components/IntroScreen";
