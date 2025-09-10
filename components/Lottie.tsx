@@ -12,7 +12,7 @@ export default function Lottie() {
       canvas: canvasRef.current,
       autoplay: true,
       loop: true,
-      src: "https://lottie.host/6b773300-4158-41c3-9d74-579efa66da8a/RXD3LRsYf6.lottie",
+      src: "https://lottie.host/adb9faf1-d543-40ef-8f54-9ed33c5b6a1e/tFmBtxC2Yw.lottie",
     });
 
     return () => {
@@ -21,7 +21,7 @@ export default function Lottie() {
   }, []);
 
   return (
-    <div className="absolute bottom-10 left-0 animate-floatRight">
+    <div className="absolute bottom-10 left-0">
       <canvas ref={canvasRef} className="w-[120px] h-[120px]" />
     </div>
   );
