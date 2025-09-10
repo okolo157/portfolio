@@ -1,10 +1,9 @@
-"use client";
 import React, { useEffect, useState, useRef } from "react";
-
 import About from "@/components/About";
 import Intro from "@/components/IntroScreen";
 import Stack from "@/components/Stack";
 import Transitioning from "@/components/Transitioning";
+import App from "@/components/App"; // 👈 import your lottie
 
 export default function Homepage() {
   const [stackVisible, setStackVisible] = useState(false);
@@ -23,25 +22,13 @@ export default function Homepage() {
 
         entries.forEach((entry) => {
           if (entry.target === stackRef.current) {
-            if (entry.isIntersecting || scrollDirection === "down") {
-              setStackVisible(true);
-            } else {
-              setStackVisible(false);
-            }
+            setStackVisible(entry.isIntersecting || scrollDirection === "down");
           }
           if (entry.target === aboutRef.current) {
-            if (entry.isIntersecting || scrollDirection === "down") {
-              setAboutVisible(true);
-            } else {
-              setAboutVisible(false);
-            }
+            setAboutVisible(entry.isIntersecting || scrollDirection === "down");
           }
           if (entry.target === transRef.current) {
-            if (entry.isIntersecting || scrollDirection === "down") {
-              setStackVisible(true);
-            } else {
-              setStackVisible(false);
-            }
+            setStackVisible(entry.isIntersecting || scrollDirection === "down");
           }
         });
       },
@@ -84,9 +71,13 @@ export default function Homepage() {
           <Transitioning />
         </div>
       </div>
-      <div className="fixed inset-0 flex justify-center items-center pointer-events-none mix-blend-difference">
-        <div className="font-bold text-[100px]">*</div>
-      </div>
+
+    <div className="fixed bottom-0 left-0 z-[9999] pointer-events-none">
+      <div className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]">
+    <App />
+  </div>
+</div>
+
     </div>
   );
 }
