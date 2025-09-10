@@ -1,8 +1,9 @@
 "use client";
+
 import { useEffect, useRef } from "react";
 import { DotLottie } from "@lottiefiles/dotlottie-web";
 
-export default function App() {
+export default function Lottie() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -12,8 +13,9 @@ export default function App() {
       autoplay: true,
       loop: true,
       src: "https://lottie.host/6b773300-4158-41c3-9d74-579efa66da8a/RXD3LRsYf6.lottie",
-      container: containerRef.current,
     });
+
+    player.mount(containerRef.current);
 
     return () => {
       player.destroy();
