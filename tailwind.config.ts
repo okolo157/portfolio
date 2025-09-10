@@ -6,11 +6,16 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes: {
+        floatRight: {
+          "0%": { transform: "translateX(0) scale(1)" },
+          "100%": { transform: "translateX(100vw) scale(1.2)" },
+        },
+      },
+      animation: {
+        floatRight: "floatRight 60s linear infinite",
       },
     },
   },
