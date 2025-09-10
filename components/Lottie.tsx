@@ -9,7 +9,7 @@ export default function Lottie() {
     if (!canvasRef.current) return;
 
     const player = new DotLottie({
-      canvas: canvasRef.current, 
+      canvas: canvasRef.current,
       autoplay: true,
       loop: true,
       src: "https://lottie.host/6b773300-4158-41c3-9d74-579efa66da8a/RXD3LRsYf6.lottie",
@@ -20,5 +20,11 @@ export default function Lottie() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="w-[120px] h-[120px]" />;
+  return (
+    <div
+      className="absolute bottom-10 left-0 animate-[floatRight_60s_linear_infinite]"
+    >
+      <canvas ref={canvasRef} className="w-[120px] h-[120px]" />
+    </div>
+  );
 }
