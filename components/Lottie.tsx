@@ -21,9 +21,7 @@ export default function Lottie() {
   }, []);
 
   return (
-    <div
-      className="absolute bottom-10 left-0 animate-[floatRight_60s_linear_infinite]"
-    >
+    <div className="absolute bottom-10 left-0 animate-floatRight">
       <canvas ref={canvasRef} className="w-[120px] h-[120px]" />
     </div>
   );
