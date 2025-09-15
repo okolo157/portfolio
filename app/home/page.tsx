@@ -73,13 +73,6 @@ export default function Homepage() {
           <Transitioning />
         </div>
       </div>
-
-    <div className="fixed bottom-0 left-0 z-[9999] pointer-events-none">
-      <div className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]">
-    <Lottie />
-  </div>
-</div>
-
     </div>
   );
 }
