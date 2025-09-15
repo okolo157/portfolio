@@ -37,7 +37,7 @@ export function LottieCamera() {
       canvas: canvasRef.current,
       autoplay: true,
       loop: true,
-      src: "https://lottie.host/47d07f91-a1c4-4664-b489-3dbcf2961ded/F9olLHMA36.lottie",
+      src: "https://lottie.host/6212b36e-537e-46ea-b1a7-a1e4998e386a/32Eom2lfjh.lottie",
     });
 
     return () => {
@@ -46,7 +46,7 @@ export function LottieCamera() {
   }, []);
 
   return (
-   <div className="fixed z-[9999]">
+   <div className="fixed z-[9999] right-2 ">
     <canvas ref={canvasRef} className="w-[120px] h-[120px]" />
    </div>
   );
