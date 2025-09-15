@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/compat/router";
 import React, { useState, useEffect } from "react";
-import LottieCamera from "@/components/Lottie";
+import { LottieCamera } from "@/components/Lottie";
 
 type NavLinkProps = {
   href: string;
