@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/compat/router";
 import React, { useState, useEffect } from "react";
+import LottieCamera from "@/components/Lottie";
 
 type NavLinkProps = {
   href: string;
@@ -47,6 +48,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-center md:justify-between py-5 gap-4 sm:gap-6 md:gap-14 px-4 sm:px-8 md:px-14 bg-black text-white">
+      <LottieCamera />
       {/* Left - VICTOR */}
       <div className="flex flex-col justify-center w-1/3">
         <NavLink href="/" loading={loading}>
