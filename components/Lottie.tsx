@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import { DotLottie } from "@lottiefiles/dotlottie-web";
 
-export default function Lottie() {
+export function Lottie() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Lottie() {
   );
 }
 
-export default function LottieCamera() {
+export function LottieCamera() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
    useEffect(() => {
