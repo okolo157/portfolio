@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Intro from "@/components/IntroScreen";
 import Stack from "@/components/Stack";
 import Transitioning from "@/components/Transitioning";
-import { Lottie } from "@/components/Lottie";
 
 export default function Homepage() {
   const [stackVisible, setStackVisible] = useState(false);
