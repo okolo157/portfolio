@@ -46,7 +46,7 @@ export function LottieCamera() {
   }, []);
 
   return (
-   <div>
+   <div className="fixed">
     <canvas ref={canvasRef} className="w-[120px] h-[120px]" />
    </div>
   );
