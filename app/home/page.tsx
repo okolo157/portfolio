@@ -5,7 +5,7 @@ import About from "@/components/About";
 import Intro from "@/components/IntroScreen";
 import Stack from "@/components/Stack";
 import Transitioning from "@/components/Transitioning";
-import App from "@/components/Lottie";
+import Lottie from "@/components/Lottie";
 
 export default function Homepage() {
   const [stackVisible, setStackVisible] = useState(false);
@@ -76,7 +76,7 @@ export default function Homepage() {
 
     <div className="fixed bottom-0 left-0 z-[9999] pointer-events-none">
       <div className="w-[80px] h-[80px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]">
-    <App />
+    <Lottie />
   </div>
 </div>
 
