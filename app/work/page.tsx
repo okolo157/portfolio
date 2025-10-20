@@ -48,7 +48,7 @@ export default function Page() {
     },
     {
       title: "SCISSOR",
-      image: "/scissor.jpg",
+      image: "/scissor.png",
       technologies: "React, TypeScript, Tailwind, NodeJS, Redis, Render",
       link: "https://www.scissor.work.gd",
       description: "A URL shortener with Redis caching.",
